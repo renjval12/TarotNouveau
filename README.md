@@ -9,7 +9,7 @@ If they want to consult the crystal ball, they can also go to the "Ask the Cryst
 
 The demographic I am intending to target with this application, are millenials and Gen-Z. 
 
-This app, uses the following API:
+This app, integrates data from the following APIs:
 <ul>
 <li><a href="https://app.swaggerhub.com/apis/ekswagger/rws-tarot_card_api/1.0.0">Ekswagger RWS Tarot Card Rest API</a></li>
 <li><a href="https://astrologyapi.docs.apiary.io/#reference/0/planets/planets">Ephemeris API</a></li>
