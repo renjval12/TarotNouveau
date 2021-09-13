@@ -1,4 +1,4 @@
-#Tarot Nouveau 🔮
+# Tarot Nouveau 🔮
 
 "Take the mysticism out of the mystics!" is the tagline for Tarot Nouveau. 
 Tarot Nouveau, is a React application whose main function is to provide any user that visits, with easily digestable, 3 and/or 5 card tarot readings. 
