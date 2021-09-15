@@ -1,8 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Josefin Sans', sans-serif;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 2%;
+  background-image: url(AdobeStock_144961341\ copy.jpeg);
+  color: white;
+}
+
+.nav-icon {
+  padding: 0 10px;
+}
+.search-bar {
+  display: inline;
+  position: absolute;
+}
+nav {
+  /* display: none; */
+  padding: 2% 0;
+  background: black;
+}
+
+nav ul {
+  /* display: flex; */
+  text-align: center;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.home-section-heading {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+  color: white
+}
+
+#services-section {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2% 0;
+  text-align: center;
+  background: linear-gradient(#1E193D, #99A9E7);
+}
+
+@media (max-width: 700px) {
+  #services-section, .service-select-cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.service-select-cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.services-subheading {
+  padding: 5% 0;
 }
