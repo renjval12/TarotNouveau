@@ -1,11 +1,10 @@
 import React from "react";
 import AskSection from "./AskSectionHome";
-import Footer from "./Footer";
 import SelectCardSection from "./ServiceSelectSection";
 
 export default function Home() {
     return (
-        <>
+        <main>
             <div></div>
             <section id="services-section" >
                 <h2 class="home-section-heading">Services</h2>
@@ -46,7 +45,6 @@ export default function Home() {
                     quoteSrc="— Anne Berest (How To Be Parisian)"
                 />
             </section>
-            <Footer />
-        </>
+        </main>
     )
 }

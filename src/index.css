@@ -7,6 +7,8 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
+/* Header */
+
 #navbar {
   display: flex;
   align-items: center;
@@ -41,6 +43,13 @@ nav ul {
 nav ul li a {
   color: white;
   text-decoration: none;
+}
+
+/* Footer */
+
+footer {
+  display: grid;
+  grid-template: repeat(3, 1fr)/repeat(4, 1fr);
 }
 
 .home-section-heading {
@@ -104,7 +113,6 @@ nav ul li a {
 #ask-stars {
   background: linear-gradient(#F997F1, #7CECFB);
   height: 100vh;
-
 }
 
 #ask-stars-desc {
