@@ -14,10 +14,12 @@ export default function Header() {
 
     return (
         <>
+
             <header>
+                <Router>
                 <div id="navbar">
                     <div id="hamburger-icon-search">
-                        <i onClick={() => setIsNavShowing(!isNavShowing)} class="fas fa-bars nav-icon"></i>
+                        <i onClick={() => setIsNavShowing(!isNavShowing)} class="fas fa-star nav-icon"></i>
                         <i onClick={() => setIsSearchShowing(!isSearchShowing)} class="fas fa-search nav-icon"></i>
                         {isSearchShowing &&
                             <form className="search-bar">
@@ -25,10 +27,9 @@ export default function Header() {
                                 <button >Submit</button>
                             </form>}
                     </div>
-                    <h1>Tarot Nouveau</h1>
+                    <h1><Link to='/'>Tarot Nouveau</Link></h1>
                     <a href="#">Login</a>
                 </div>
-                <Router>
                     {isNavShowing && <nav>
                         <ul>
                             <li><Link to='/'>Home</Link></li>

@@ -6,9 +6,9 @@ export default function ServicesList() {
         <div id="services-link-list" className="link-list">
             <h1>Services</h1>
             <ul>
-                <FooterLink linkName="Ask the Cards"/>
-                <FooterLink linkName="Ask the Stars"/>
-                <FooterLink linkName="Ask the Crystal Ball"/>
+                <FooterLink href="/src/AskTheCards.js" linkName="Ask the Cards"/>
+                <FooterLink  href="/src/AskTheStars.js" linkName="Ask the Stars"/>
+                <FooterLink  href="/src/AskTheCrystalBall.js" linkName="Ask the Crystal Ball"/>
             </ul>
         </div>
     )
