@@ -1,5 +1,6 @@
 import React from "react";
 import AskSection from "./AskSectionHome";
+import Footer from "./Footer";
 import SelectCardSection from "./ServiceSelectSection";
 
 export default function Home() {
@@ -45,7 +46,7 @@ export default function Home() {
                     quoteSrc="— Anne Berest (How To Be Parisian)"
                 />
             </section>
-            
+            <Footer />
         </>
     )
 }
