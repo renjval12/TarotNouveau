@@ -20,8 +20,8 @@ export default function Header() {
                 <Router>
                     <div id="navbar">
                         <div id="hamburger-icon-search">
-                            <i onClick={() => setIsNavShowing(!isNavShowing)} class="fas fa-star nav-icon"></i>
-                            <i onClick={() => setIsSearchShowing(!isSearchShowing)} class="fas fa-search nav-icon"></i>
+                            <i onClick={() => setIsNavShowing(!isNavShowing)} className="fas fa-star nav-icon"></i>
+                            <i onClick={() => setIsSearchShowing(!isSearchShowing)} className="fas fa-search nav-icon"></i>
                             {isSearchShowing &&
                                 <form className="search-bar">
                                     <input type="search" />
