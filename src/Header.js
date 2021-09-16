@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
+
 import Home from "./Home";
-import About from "./About";
+import About from "./About"
 import Cards from "./AskTheCards";
 import CrystalBall from "./AskTheCrystalBall";
 import Stars from "./AskTheStars";
@@ -17,19 +18,19 @@ export default function Header() {
 
             <header>
                 <Router>
-                <div id="navbar">
-                    <div id="hamburger-icon-search">
-                        <i onClick={() => setIsNavShowing(!isNavShowing)} class="fas fa-star nav-icon"></i>
-                        <i onClick={() => setIsSearchShowing(!isSearchShowing)} class="fas fa-search nav-icon"></i>
-                        {isSearchShowing &&
-                            <form className="search-bar">
-                                <input type="search" />
-                                <button >Submit</button>
-                            </form>}
+                    <div id="navbar">
+                        <div id="hamburger-icon-search">
+                            <i onClick={() => setIsNavShowing(!isNavShowing)} class="fas fa-star nav-icon"></i>
+                            <i onClick={() => setIsSearchShowing(!isSearchShowing)} class="fas fa-search nav-icon"></i>
+                            {isSearchShowing &&
+                                <form className="search-bar">
+                                    <input type="search" />
+                                    <button >Submit</button>
+                                </form>}
+                        </div>
+                        <h1><Link to='/'>Tarot Nouveau</Link></h1>
+                        <a id="login" href="#">Login</a>
                     </div>
-                    <h1><Link to='/'>Tarot Nouveau</Link></h1>
-                    <a href="#">Login</a>
-                </div>
                     {isNavShowing && <nav>
                         <ul>
                             <li><Link to='/'>Home</Link></li>

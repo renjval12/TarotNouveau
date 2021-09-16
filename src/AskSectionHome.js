@@ -6,7 +6,7 @@ export default function AskSection(props) {
             <div id={props.askDescId}>
                 <h2>{props.askHeading}</h2>
                 <p>{props.description}</p>
-                <button>Go to Page</button>
+                <button class="blk-white-btn">Go to Page</button>
             </div>
             <div id={props.askQuoteId}>
                 <blockquote>

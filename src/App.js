@@ -3,13 +3,14 @@ import Footer from "./Footer";
 import Header from "./Header";
 
 
+
 export default class App extends Component {
-  render() {
-    return (
-      <>
-        <Header />
-        <Footer />
-      </>
-    );
-  }
+    render() {
+        return (
+            <>
+                <Header/>
+                <Footer/>
+            </>
+        );
+    }
 }

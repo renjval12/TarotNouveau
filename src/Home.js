@@ -5,9 +5,9 @@ import SelectCardSection from "./ServiceSelectSection";
 export default function Home() {
     return (
         <main>
-            <div></div>
+            <div id="home-intro" className="pg-intro"></div>
             <section id="services-section" >
-                <h2 class="home-section-heading">Services</h2>
+                <h2 className="home-section-heading">Services</h2>
                 <section className="service-select-cards">
                     <SelectCardSection sectionName="Ask the Cards" />
                     <SelectCardSection sectionName="Ask the Stars" />
