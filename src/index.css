@@ -103,7 +103,7 @@ footer {
   grid-template: repeat(2, min-content)/repeat(4, 1fr);
   gap: 5%;
   padding: 3% 5%;
-  background-color: black;
+  background-color: rgb(26, 4, 33);
 }
 
 .link-list ul {
