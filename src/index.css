@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 2% 3%;
-  background-color: rgb(26, 4, 33);
+  background-color: black;
 }
 
 #navbar h1 a {
@@ -103,7 +103,7 @@ footer {
   grid-template: repeat(2, min-content)/repeat(4, 1fr);
   gap: 5%;
   padding: 3% 5%;
-  background-color: rgb(26, 4, 33);
+  background-color: black;
 }
 
 .link-list ul {
