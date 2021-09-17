@@ -142,7 +142,6 @@ footer {
   gap: 2%;
 }
 
-
 #license {
   grid-area: 3/2/4/4;
   text-align: center;
@@ -182,6 +181,37 @@ footer {
   #newsletter-list {
     padding-bottom: 5%;
   }
+}
+
+/* Main */
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+/* Button */
+
+button {
+  border-width: 1px;
+  padding: 10px 15px;
+  border-radius: 50px;
+}
+
+.blk-white-btn {
+  border-width: 0px;
+  padding: 4%;
+  border-radius: 50px;
+}
+
+/* Text Colors */
+
+.white-text {
+  color: white;
+}
+
+.blk-text {
+  color: black;
 }
 
 /* Home Page */
@@ -305,23 +335,18 @@ footer {
 
 /* Ask Stars Page */
 
-
 /* Ask Crystal Ball Page */
 
-/* Button */
-
-.blk-white-btn {
-  border-width: 0px;
-  padding: 4%;
-  border-radius: 50px;
+#ask-crystal-ball-intro {
+  height: 100%;
+  background: url("./images/askcrystalbgintro.jpeg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
-/* Text Colors */
-
-.white-text {
-  color: white;
-}
-
-.blk-text {
-  color: black;
+.ask-crystal-bg {
+  height: 100vh;
+  background: linear-gradient(#DDDEE6, black);
+  display: grid;
+  grid-template: repeat(4, 1fr)/repeat(3, 1fr);
 }
