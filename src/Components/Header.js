@@ -18,7 +18,7 @@ export default function Header() {
 
             <header>
                 <Router>
-                    <div id="navbar">
+                    <div id="navbar" className="white-text">
                         <div id="hamburger-icon-search">
                             <i onClick={() => setIsNavShowing(!isNavShowing)} className="fas fa-star nav-icon"></i>
                             <i onClick={() => setIsSearchShowing(!isSearchShowing)} className="fas fa-search nav-icon"></i>
@@ -28,17 +28,17 @@ export default function Header() {
                                     <button >Submit</button>
                                 </form>}
                         </div>
-                        <h1><Link to='/'>Tarot Nouveau</Link></h1>
-                        <Link id="login" to='#'>Login</Link>
+                        <h1><Link className="white-text" to='/'>Tarot Nouveau</Link></h1>
+                        <Link id="login"  className="white-text" to='#'>Login</Link>
                     </div>
                     {isNavShowing && <nav>
                         <ul>
-                            <li><Link to='/'>Home</Link></li>
-                            <li><Link to='/about'>About</Link></li>
-                            <li><Link to='/ask-the-cards'>Ask the Cards</Link></li>
-                            <li><Link to='/ask-the-stars'>Ask the Stars</Link></li>
-                            <li><Link to='/ask-the-crystal-ball'>Ask the Crystal Ball</Link></li>
-                            <li><Link to='/contact'>Contact</Link></li>
+                            <li><Link className="white-text" to='/'>Home</Link></li>
+                            <li><Link className="white-text" to='/about'>About</Link></li>
+                            <li><Link className="white-text" to='/ask-the-cards'>Ask the Cards</Link></li>
+                            <li><Link className="white-text" to='/ask-the-stars'>Ask the Stars</Link></li>
+                            <li><Link className="white-text" to='/ask-the-crystal-ball'>Ask the Crystal Ball</Link></li>
+                            <li><Link className="white-text" to='/contact'>Contact</Link></li>
                         </ul>
                     </nav>}
                     <Switch>

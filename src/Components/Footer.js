@@ -6,12 +6,12 @@ import SupportSocialList from "./SupportSocialsLinkList";
 
 export default function Footer() {
     return (
-        <footer>
+        <footer className="white-text">
             <CompanyList />
             <ServicesList />
             <SupportSocialList />
             <Newsletter />
-            <span id="license"><i className="far fa-copyright"></i>  2021 Tarot Nouveau, Inc.</span>
+            <span id="license " className="white-text"><i className="far fa-copyright"></i>  2021 Tarot Nouveau, Inc.</span>
         </footer>
     )
 }

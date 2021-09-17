@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
 * {
   margin: 0;
   padding: 0;
@@ -17,11 +15,9 @@
   justify-content: space-between;
   padding: 2% 3%;
   background-color: rgb(26, 4, 33);
-  color: white;
 }
 
 #navbar h1 a {
-  color: white;
   text-decoration: none;
 }
 
@@ -36,7 +32,7 @@
     background-color: #916FB7;
   }
   75% {
-    background-color: rgb(233, 122, 144);
+    background-color: rgb(230, 138, 156);
   }
   100% {
     background-color: #eea1c2;
@@ -47,6 +43,7 @@
   animation-name: changeColor;
   animation-iteration-count: infinite;
   animation-duration: 3s;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -87,12 +84,10 @@ nav ul li {
 
 nav ul li a {
   font-size: 1.5rem;
-  color: white;
   text-decoration: none;
 }
 
 #login {
-  color: white;
   text-decoration: none;
   font-weight: 700;
 }
@@ -147,12 +142,8 @@ footer {
   gap: 2%;
 }
 
-.far, .fab {
-  color: white;
-}
 
 #license {
-  color: white;
   grid-area: 3/2/4/4;
   text-align: center;
 }
@@ -162,7 +153,6 @@ footer {
 }
 
 .subscribe-label {
-  color: white;
   font-weight: 300;
 }
 
@@ -207,13 +197,11 @@ footer {
 #home-intro, #ask-cards-intro {
   background-size: cover;
   background-repeat: no-repeat;
-  height: 90vh;
 }
 
 .home-section-heading {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
-  color: white;
   padding-top: 5%
 }
 
@@ -242,7 +230,7 @@ footer {
   padding: 5% 0;
 }
 
-.ask-section {
+#ask-section {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
 }
@@ -299,6 +287,12 @@ footer {
   text-align: right;
 }
 
+/* Pages */
+
+.section {
+  height: 100vh;
+}
+
 /* Ask Cards Page */
 
 #deck {
@@ -309,10 +303,25 @@ footer {
   max-width: 4rem;
 }
 
+/* Ask Stars Page */
+
+
+/* Ask Crystal Ball Page */
+
 /* Button */
 
 .blk-white-btn {
   border-width: 0px;
   padding: 4%;
   border-radius: 50px;
+}
+
+/* Text Colors */
+
+.white-text {
+  color: white;
+}
+
+.blk-text {
+  color: black;
 }
