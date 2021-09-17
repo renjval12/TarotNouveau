@@ -10,6 +10,7 @@ export default function Home() {
                 <h2>Take the Mysticism out of the Mystics!</h2>
             </div>
             <section id="services-section" >
+                <h2 className="home-section-heading">Services</h2>
                 <section className="service-select-cards">
                     <SelectCardSection sectionName="Ask the Cards" />
                     <SelectCardSection sectionName="Ask the Stars" />
