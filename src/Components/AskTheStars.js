@@ -3,11 +3,11 @@ export default function Stars() {
     const [isResultShowing, setIsResultShowing] = useState(false);
     const [isFormShowing, setIsFormShowing] = useState(false);
 
-    // stores the data retrieved from the Aztro API after fetch request
-    const [aztroData, setAztroData] = useState([])
-
     //stores the name and birthday of the user
     const [userInfo, setUserInfo] = useState({ name: '', birthday: '', })
+
+    // stores the data retrieved from the Aztro API after fetch request
+    const [aztroData, setAztroData] = useState([])
 
     //stores the month and day of the users birthday, 
     const [birthdayMonth, setBirthdayMonth] = useState()
@@ -27,12 +27,10 @@ export default function Stars() {
         setBirthdayDay(day)
     }
 
-    /* switch statement to determine the user's zodiac sign, based on what they submitted*/
     let sign;
-
     const handleSubmit = (event) => {
         event.preventDefault()
-
+        /* switch statement to determine the user's zodiac sign, based on what they submitted*/
         switch (birthdayMonth) {
             case 1:
                 if (birthdayDay <= 20) {

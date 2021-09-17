@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 export default function CrystalBall() {
+    const [isResultShowing, setIsResultShowing] = useState(false);
+
+    //stores the question the user ask
     const [question, setQuestion] = useState('')
     const [userAnswer, setUserAnswer] = useState('')
-    const [isResultShowing, setIsResultShowing] = useState(false);
+
 
     const handleChange = (event) => {
         setQuestion(event.target.value)
@@ -11,12 +14,11 @@ export default function CrystalBall() {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        let uri = "https://8ball.delegator.com/magic/JSON/" + question;
-        fetch(uri)
+        fetch(`https://8ball.delegator.com/magic/JSON/${question}`)
             .then(response => response.json())
             .then(result => {
                 setUserAnswer(result)
-                console.log(userAnswer.magic.answer)
+                console.log(userAnswer)
             });
     }
 
@@ -34,7 +36,7 @@ export default function CrystalBall() {
                     <button onClick={() => setIsResultShowing(!isResultShowing)}>Ask</button>
                 </form>
                 {isResultShowing && <div>
-                    <p> Current Date: {}</p> 
+                    <p> Current Date: { }</p>
                 </div>}
             </section>
         </main >
