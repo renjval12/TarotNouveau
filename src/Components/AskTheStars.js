@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 export default function Stars() {
     const [isResultShowing, setIsResultShowing] = useState(false);
     const [isFormShowing, setIsFormShowing] = useState(false);
@@ -139,20 +139,6 @@ export default function Stars() {
             break
     }
 
-    // useEffect(() => {
-    //     console.log('useEffect runs: API fetch')
-
-    //     const URL = `https://aztro.sameerkumar.website/?sign=${sign}&day=today`;
-
-    //     fetch(URL, { method: 'POST' })
-    //         .then(response => response.json())
-    //         .then(result => {
-    //             // console.log(result)
-    //             setAztroData(result)
-    //         }
-    //         );
-    // }, [])
-
     const handleSubmit = (event) => {
         event.preventDefault()
         const URL = `https://aztro.sameerkumar.website/?sign=${sign}&day=today`;
@@ -183,8 +169,15 @@ export default function Stars() {
                 </div>
                 <div className="ask-stars-input">
                     <label className="ask-stars-label" htmlFor="birthday">Birthday: </label>
-                    <input onChange={handleChange} type="date" min="2003-01-01" name="birthday-input" id="birthday" required />
+                    <input
+                        onChange={handleChange}
+                        type="date"
+                        min="2003-01-01"
+                        name="birthday-input"
+                        id="birthday"
+                        required />
                 </div>
+                {/* <button>Get Results</button> */}
                 <button onClick={() => setIsResultShowing(!isResultShowing)}>Show Results</button>
             </form>}
             {isResultShowing && <div>

@@ -29,7 +29,7 @@ export default function Header() {
                                 </form>}
                         </div>
                         <h1><Link to='/'>Tarot Nouveau</Link></h1>
-                        <a id="login" href="#">Login</a>
+                        <Link to='#'>Login</Link>
                     </div>
                     {isNavShowing && <nav>
                         <ul>

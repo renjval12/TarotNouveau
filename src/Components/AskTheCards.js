@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import images from "../images"
+import React from "react";
+// import images from "../images"
 
 export default function Cards() {
-    const [cards] = useState([])
+    // const [cards] = useState([])
     return (
         <>
 
