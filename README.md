@@ -12,7 +12,6 @@ The demographic I am intending to target with this application, are millenials a
 This app, integrates data from the following APIs:
 <ul>
 <li><a href="https://app.swaggerhub.com/apis/ekswagger/rws-tarot_card_api/1.0.0">Ekswagger RWS Tarot Card Rest API</a></li>
-<li><a href="https://astrologyapi.docs.apiary.io/#reference/0/planets/planets">Ephemeris API</a></li>
 <li><a href="https://aztro.sameerkumar.website/">Aztro API</a></li>
 </ul>
 
