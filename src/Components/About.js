@@ -7,7 +7,7 @@ export default function About() {
             
             <section>
                 <h2>About Tarot Nouveau</h2>
-                <img src="../images/tarotcardback.png" alt="img"/>
+                <img src="../images/tarotcardback.png" alt=""/>
                 <p></p>
             </section>
             <section>
