@@ -18,3 +18,6 @@ This app, integrates data from the following APIs:
 </ul>
 
 Link to Prototype: https://xd.adobe.com/view/3f5be611-652d-4e83-af2b-93aa0e4f4027-6a08/?fullscreen
+Webpage: https://tarot-nouveau.vercel.app/
+
+This project is a WORK IN PROGRESS. Review working prototype for information on intended output.
