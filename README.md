@@ -14,5 +14,7 @@ This app, integrates data from the following APIs:
 <ul>
 <li><a href="https://app.swaggerhub.com/apis/ekswagger/rws-tarot_card_api/1.0.0">Ekswagger RWS Tarot Card Rest API</a></li>
 <li><a href="https://aztro.sameerkumar.website/">Aztro API</a></li>
-<li><a href="https://aztro.sameerkumar.website/">https://8ball.delegator.com/</a></li>
+<li><a href="https://8ball.delegator.com/">8Ball API</a></li>
 </ul>
+
+Link to Prototype: https://xd.adobe.com/view/3f5be611-652d-4e83-af2b-93aa0e4f4027-6a08/?fullscreen
