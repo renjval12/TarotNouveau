@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
+// import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap'
 
 import Home from "./Home";
 import About from "./About"
@@ -17,6 +18,7 @@ export default function Header() {
         <>
 
             <header>
+                
                 <Router>
                     <div id="navbar" className="white-text">
                         <div id="hamburger-icon-search">

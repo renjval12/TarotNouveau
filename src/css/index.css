@@ -13,12 +13,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2% 3%;
-  background-color: black;
+  padding: 1% 3%;
+  background-color: rgb(22, 10, 26);
 }
 
 #navbar h1 a {
   text-decoration: none;
+  font-weight: 900;
+  font-size: 2rem;
 }
 
 @keyframes changeColor {
@@ -49,6 +51,7 @@
 }
 
 .nav-icon {
+  color: white;
   padding: 0 10px;
 }
 
@@ -58,7 +61,7 @@
 
 .nav-icon:hover {
   cursor: pointer;
-  color: #B578E2;
+  color: #9f6fb7;
 }
 
 .search-bar {
@@ -93,7 +96,7 @@ nav ul li a {
 }
 
 nav ul li a:hover, #login:hover {
-  color: #FEA3F8;
+  color: #916FB7;
 }
 
 /* Footer */
@@ -217,11 +220,11 @@ button {
 /* Home Page */
 
 #home-intro {
-  background: url("./images/homeintrobg.jpeg");
+  background: url("../images/homeintrobg.jpeg");
 }
 
 #ask-cards-intro {
-  background: url("./images/askcardsintro.jpg");
+  background: url("../images/askcardsintro.jpg");
 }
 
 #home-intro, #ask-cards-intro {
@@ -339,7 +342,7 @@ button {
 
 #ask-crystal-ball-intro {
   height: 100%;
-  background: url("./images/askcrystalbgintro.jpeg");
+  background: url("../images/askcrystalbgintro.jpeg");
   background-size: 100%;
   background-repeat: no-repeat;
 }

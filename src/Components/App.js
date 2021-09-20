@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import Footer from "./Components/Footer"
-import Header from "./Components/Header"
+import Footer from "./Footer"
+import Header from "./Header"
+// import TestBootstrap from "./Components/TestBootstrap"
 
 
 
@@ -9,7 +10,9 @@ export default class App extends Component {
         return (
             <>
                 <Header/>
+                {/* <TestBootstrap/> */}
                 <Footer/>
+                
             </>
         );
     }
