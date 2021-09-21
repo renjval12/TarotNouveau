@@ -8,8 +8,11 @@ import Cards from "./AskTheCards";
 import CrystalBall from "./AskTheCrystalBall";
 import Stars from "./AskTheStars";
 import Contact from "./Contact";
-import FiveCards from "./FiveCards"
-import ThreeCards from "./ThreeCards"
+
+import FiveCardsResults from "./FiveCardsResults"
+import ThreeCardsResults from "./ThreeCardsResults"
+import ThreeCard from "./ThreeCards";
+import FiveCard from "./FiveCards";
 
 
 export default function Header() {
@@ -53,8 +56,11 @@ export default function Header() {
                         <Route path='/ask-the-stars' component={Stars} />
                         <Route path='/ask-the-crystal-ball' component={CrystalBall} />
                         <Route path='/contact' component={Contact} />
-                        <Route path='/ThreeCards' component={ThreeCards} />
-                        <Route path='/FiveCards' component={FiveCards} />
+                        <Route path='/three-card-reading' component={ThreeCard}/>
+                        <Route path='/three-card-results' component={ThreeCardsResults} />
+                        <Route path='/five-card-reading' component={FiveCard}/>
+                        <Route path='/five-card-results' component={FiveCardsResults} />
+                        
                     </Switch>
                 </Router>
             </header>

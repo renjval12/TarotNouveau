@@ -1,6 +1,6 @@
 import React from "react";
 import { useContext } from "react";
-import { TarotDataContext } from "./FiveCards";
+import { TarotDataContext } from "./FiveCardsResults";
 
 export default function Card5() {
     const { tarotData, direction, question } = useContext(TarotDataContext)

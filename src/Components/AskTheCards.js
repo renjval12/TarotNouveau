@@ -1,7 +1,6 @@
 import React from "react";
-import { Link, Route } from 'react-router-dom'
-import FiveCards from "./FiveCards";
-import ThreeCards from "./ThreeCards";
+import { Link } from 'react-router-dom'
+
 
 export default function Cards() {
     return (
@@ -9,20 +8,12 @@ export default function Cards() {
             <section id="ask-the-cards-intro">
                 <div>
                     <h2>Three Card Reading</h2>
-                    <Link to="/ThreeCards">Start</Link>
+                    <Link to="/three-card-reading">Start</Link>
                 </div>
                 <div>
                     <h2>Five Card Reading</h2>
-                    <Link to="/FiveCards">Start</Link>
+                    <Link to="/five-card-reading">Start</Link>
                 </div>
-
-                {/* <Route path='/ThreeCards' component={ThreeCards} />
-                <Route path='/FiveCards' component={FiveCards} /> */}
-
-
-                {/* <ThreeCards /> */}
-                {/* <FiveCards /> */}
-
             </section>
 
         </main>
