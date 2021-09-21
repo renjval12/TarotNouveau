@@ -6,7 +6,7 @@ export const TarotDataContext = createContext()
 
 export default function ThreeCards() {
     // this state determines what position the card is displayed in upright or reversed. If 0, the card will be upright, else/if 1, card will be reversed
-    const [direction] = useState(Math.floor(Math.random() * 1))
+    const [direction] = useState([Math.floor(Math.random() * 2), Math.floor(Math.random() * 2), Math.floor(Math.random() * 2)])
     const [tarotData, setTarotData] = useState([])
     const [question, setQuestion] = useState('')
 
@@ -50,7 +50,7 @@ export default function ThreeCards() {
             <h1>Three Card reading</h1>
             <h2>{question}</h2>
             {/* set the value of TarotDataContext to the tarotData state, so I can use the values from tarotData, in the child components */}
-            <TarotDataContext.Provider value={{tarotData, direction, question}}>
+            <TarotDataContext.Provider value={{ tarotData, direction, question }}>
                 <Card3 />
             </TarotDataContext.Provider>
 

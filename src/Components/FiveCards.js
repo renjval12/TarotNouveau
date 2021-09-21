@@ -6,7 +6,7 @@ export const TarotDataContext = createContext()
 
 export default function FiveCards() {
     // this state determines what position the card is displayed in upright or reversed. If 0, the card will be upright, else/if 1, card will be reversed
-    const [direction] = useState(Math.floor(Math.random() * 1))
+    const [direction] = useState([Math.floor(Math.random() * 2), Math.floor(Math.random() * 2), Math.floor(Math.random() * 2),Math.floor(Math.random() * 2),Math.floor(Math.random() * 2)])
     const [tarotData, setTarotData] = useState([])
     const [question, setQuestion] = useState('')
 

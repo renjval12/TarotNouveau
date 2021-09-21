@@ -3,18 +3,18 @@ import { useContext } from "react";
 import { TarotDataContext } from "./ThreeCards";
 
 export default function Card3() {
-    const { tarotData, direction, question} = useContext(TarotDataContext)
+    const { tarotData, direction, question } = useContext(TarotDataContext)
     // console.log(tarotData)
-    
+
     return (
         <>
-            {tarotData.map((card) =>
+            {tarotData.map((card, index) =>
                 <div key={card.name_short}>
-                    <h1>{card.name}</h1>
-                    <h2>{direction === 0 ? "Upright: " + card.meaning_up : "Reversed: " + card.meaning_rev}</h2>
+                    <h2>{question}</h2>
+                    <h3>{card.name}</h3>
+                    <h4>{direction[index] === 0 ? `Upright:  ${card.meaning_up}` : `Reversed: ${card.meaning_rev}`}</h4>
                     <p>{card.desc}</p>
                 </div>
-
             )}
         </>
     )
