@@ -34,19 +34,6 @@ export default function ThreeCardsResults() {
     }
     return (
         <section className="three-card-reading">
-            <form onSubmit={handleSubmit}>
-                <label className="ask-cards-label" htmlFor="question-input">Question: </label>
-                <input
-                    onChange={handleChange}
-                    ref={questionRef}
-                    type="text"
-                    name="question-input"
-                    id="question"
-                    placeholder="Enter Question"
-                    required
-                />
-                <button>Get Reading</button>
-            </form>
             <h1>Three Card reading</h1>
             <h2>{question}</h2>
             {/* set the value of TarotDataContext to the tarotData state, so I can use the values from tarotData, in the child components */}

@@ -1,13 +1,34 @@
-import React from "react";
 import { Link } from 'react-router-dom'
+import React, { useState, useRef, createContext } from "react";
 
 
 export default function FiveCard() {
+    const [question, setQuestion] = useState('')
+    let questionRef = useRef()
+    const handleChange = () => {
+        setQuestion(questionRef.current.value)
+    }
+
+    const handleSubmit = (event) => {
+        event.preventDefault()
+        // console.log(tarotData)
+    }
     return (
         <main>
             <h2>Five Card Reading</h2>
-            
-            <button><Link to="/five-card-reading">Start</Link></button>
+            <form onSubmit={handleSubmit}>
+                <label className="ask-cards-label" htmlFor="question-input">Question: </label>
+                <input
+                    onChange={handleChange}
+                    ref={questionRef}
+                    type="text"
+                    name="question-input"
+                    id="question"
+                    placeholder="Enter Question"
+                    required
+                />
+                <Link to="/five-card-results"><button>Get Reading</button></Link>
+            </form>
         </main>
     )
 

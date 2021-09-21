@@ -35,19 +35,6 @@ export default function FiveCardsResults() {
 
     return (
         <section className="five-card-reading">
-            <form onSubmit={handleSubmit}>
-                <label className="ask-cards-label" htmlFor="question-input">Question: </label>
-                <input
-                    onChange={handleChange}
-                    ref={questionRef}
-                    type="text"
-                    name="question-input"
-                    id="question"
-                    placeholder="Enter Question"
-                    required />
-
-                <button>Get Reading</button>
-            </form>
             <h1>Five Card reading</h1>
             {/* set the value of TarotDataContext to the tarotData state, so I can use the values from tarotData, in the child components */}
             <TarotDataContext.Provider value={{ tarotData, direction, question }}>
