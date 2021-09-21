@@ -153,7 +153,6 @@ export default function Stars() {
                 setAztroData(result)
             }
             );
-
     }
 
 
@@ -161,7 +160,7 @@ export default function Stars() {
     return (
         <main>
             <h1>Ask the Stars</h1>
-            <div id="ask-stars-intro" class="intro">
+            <div id="ask-stars-intro" className="intro">
                 <h2>“Watch the stars, and see yourself running with them.”</h2>
                 <button onClick={() => setIsFormShowing(!isFormShowing)}>Start</button>
             </div>
@@ -201,8 +200,9 @@ export default function Stars() {
                 Date Range: {aztroData.date_range} <br />
                 Mood: {aztroData.mood} <br />
                 Horoscope: {aztroData.description} <br />
-
-                <button onClick="window.location.reload()">New Horoscope</button>
+                <form>
+                    <button>New Horoscope</button>
+                </form>
             </div>}
         </main>
     )

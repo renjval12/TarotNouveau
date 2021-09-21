@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, Route } from 'react-router-dom'
 import FiveCards from "./FiveCards";
 import ThreeCards from "./ThreeCards";
 
@@ -6,15 +7,20 @@ export default function Cards() {
     return (
         <main>
             <section id="ask-the-cards-intro">
-                {/* <div>
+                <div>
                     <h2>Three Card Reading</h2>
-                    <a href="./ThreeCards.js">Start</a>
+                    <Link to="/ThreeCards">Start</Link>
                 </div>
                 <div>
                     <h2>Five Card Reading</h2>
-                    <a href="./FiveCards.js">Start</a>
-                </div> */}
-                <ThreeCards />
+                    <Link to="/FiveCards">Start</Link>
+                </div>
+
+                {/* <Route path='/ThreeCards' component={ThreeCards} />
+                <Route path='/FiveCards' component={FiveCards} /> */}
+
+
+                {/* <ThreeCards /> */}
                 {/* <FiveCards /> */}
 
             </section>

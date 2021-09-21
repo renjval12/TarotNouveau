@@ -8,6 +8,9 @@ import Cards from "./AskTheCards";
 import CrystalBall from "./AskTheCrystalBall";
 import Stars from "./AskTheStars";
 import Contact from "./Contact";
+import FiveCards from "./FiveCards"
+import ThreeCards from "./ThreeCards"
+
 
 export default function Header() {
     const [isNavShowing, setIsNavShowing] = useState(false);
@@ -18,7 +21,7 @@ export default function Header() {
         <>
 
             <header>
-                
+
                 <Router>
                     <div id="navbar" className="white-text">
                         <div id="hamburger-icon-search">
@@ -31,7 +34,7 @@ export default function Header() {
                                 </form>}
                         </div>
                         <h1><Link className="white-text" to='/'>Tarot Nouveau</Link></h1>
-                        <Link id="login"  className="white-text" to='#'>Login</Link>
+                        <Link id="login" className="white-text" to='#'>Login</Link>
                     </div>
                     {isNavShowing && <nav>
                         <ul>
@@ -50,6 +53,8 @@ export default function Header() {
                         <Route path='/ask-the-stars' component={Stars} />
                         <Route path='/ask-the-crystal-ball' component={CrystalBall} />
                         <Route path='/contact' component={Contact} />
+                        <Route path='/ThreeCards' component={ThreeCards} />
+                        <Route path='/FiveCards' component={FiveCards} />
                     </Switch>
                 </Router>
             </header>
