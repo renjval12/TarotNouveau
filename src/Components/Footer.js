@@ -11,7 +11,7 @@ export default function Footer() {
             <ServicesList />
             <SupportSocialList />
             <Newsletter />
-            <span id="license " className="white-text"><i className="far fa-copyright"></i>  2021 Tarot Nouveau, Inc.</span>
+            <span id="license" className="white-text"><i className="far fa-copyright"></i>  2021 Tarot Nouveau, Inc.</span>
         </footer>
     )
 }

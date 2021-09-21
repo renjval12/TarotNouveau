@@ -111,9 +111,11 @@ footer {
 
 .link-list ul {
   list-style-type: none;
+  padding: 0;
 }
 
 .link-list ul li {
+  /* list-style-type: none; */
   padding: 2% 0;
 }
 
@@ -142,7 +144,7 @@ footer {
 
 #social-footer-links {
   display: flex;
-  gap: 2%;
+  gap: 2%; 
 }
 
 #license {

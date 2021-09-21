@@ -12,11 +12,10 @@ export default class App extends Component {
 
     render() {
         return (
-            <isShowingContext.Provider value={this.state.isResultShowing}>
+            <>
                 <Header />
-                {/* <TestBootstrap/> */}
                 <Footer />
-            </isShowingContext.Provider>
+            </>
         );
     }
 }

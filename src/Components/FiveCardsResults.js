@@ -1,16 +1,17 @@
-import React, { useEffect, useState, useRef, createContext } from "react";
+import React, { useEffect, useState, createContext, useContext } from "react";
 import Card5 from "./Card5";
+import { QuestionContext } from "./Header";
 
 //created a context variable to pass down the value of the tarotData state to the children of the FiveCards() functional component
 export const TarotDataContext = createContext()
 
-export default function FiveCardsResults() {
+export default function FiveCardsResults({question}) {
     // this state determines what position the card is displayed in upright or reversed. If 0, the card will be upright, else/if 1, card will be reversed
-    const [direction] = useState([Math.floor(Math.random() * 2), Math.floor(Math.random() * 2), Math.floor(Math.random() * 2),Math.floor(Math.random() * 2),Math.floor(Math.random() * 2)])
+    const [direction] = useState([Math.floor(Math.random() * 2), Math.floor(Math.random() * 2), Math.floor(Math.random() * 2), Math.floor(Math.random() * 2), Math.floor(Math.random() * 2)])
     const [tarotData, setTarotData] = useState([])
-    const [question, setQuestion] = useState('')
-
-    let questionRef = useRef()
+    // const {question} = useContext(QuestionContext)
+    
+    console.log(question)
 
     useEffect(() => {
         console.log('useEffect runs')
@@ -24,20 +25,13 @@ export default function FiveCardsResults() {
             )
     }, [])
 
-    const handleChange = () => {
-        setQuestion(questionRef.current.value)
-    }
-
-    const handleSubmit = (event) => {
-        event.preventDefault()
-        // console.log(tarotData)
-    }
-
     return (
         <section className="five-card-reading">
             <h1>Five Card reading</h1>
+            {/* <h2>{question}</h2> */}
+            <h2>{question}</h2>
             {/* set the value of TarotDataContext to the tarotData state, so I can use the values from tarotData, in the child components */}
-            <TarotDataContext.Provider value={{ tarotData, direction, question }}>
+            <TarotDataContext.Provider value={{ tarotData, direction }}>
                 <Card5 />
             </TarotDataContext.Provider>
         </section>

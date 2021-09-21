@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom'
-import React, { useState, useRef, createContext } from "react";
+import React, { useRef, useContext } from "react";
+import { QuestionContext } from './Header';
 
+// export const QuestionContext = createContext()
 
-export default function FiveCard() {
-    const [question, setQuestion] = useState('')
+export default function FiveCard({setQuestion}) {
+    // const [question, setQuestion] = useState('')
+    // const {setQuestion} = useContext(QuestionContext)
     let questionRef = useRef()
     const handleChange = () => {
         setQuestion(questionRef.current.value)
@@ -27,7 +30,8 @@ export default function FiveCard() {
                     placeholder="Enter Question"
                     required
                 />
-                <Link to="/five-card-results"><button>Get Reading</button></Link>
+                    <Link to="/five-card-results"><button>Get Reading</button></Link>
+
             </form>
         </main>
     )

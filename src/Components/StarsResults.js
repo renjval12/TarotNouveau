@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 export default function Stars() {
+    const [isResultShowing, setIsResultShowing] = useState(false);
+    const [isFormShowing, setIsFormShowing] = useState(false);
+
     //stores the name and birthday of the user
     const [userInfo, setUserInfo] = useState({ name: '', birthday: '', })
 
@@ -160,8 +163,9 @@ export default function Stars() {
             <h1>Ask the Stars</h1>
             <div id="ask-stars-intro" className="intro">
                 <h2>“Watch the stars, and see yourself running with them.”</h2>
+                <button onClick={() => setIsFormShowing(!isFormShowing)}>Start</button>
             </div>
-            <form onSubmit={handleSubmit}>
+            {isFormShowing && <form onSubmit={handleSubmit}>
                 <div className="ask-stars-input">
                     <label className="ask-stars-label" htmlFor="birthday">Birthday: </label>
                     <input
@@ -182,8 +186,25 @@ export default function Stars() {
                         placeholder="Enter Name"
                         required />
                 </div>
-                <button>Get Results</button>
-            </form>
+
+                {/* <button>Get Results</button> */}
+                <button onClick={() => setIsResultShowing(!isResultShowing)}>Show Results</button>
+            </form>}
+            {isResultShowing && <div>
+                <h1>{userInfo.name}</h1>
+                <h2>{zodiac}</h2>
+                Current Date: {aztroData.current_date} <br />
+                Compatibility: {aztroData.compatibility} <br />
+                Lucky Number: {aztroData.lucky_number} <br />
+                Lucky Time: {aztroData.lucky_time} <br />
+                Color: {aztroData.color} <br />
+                Date Range: {aztroData.date_range} <br />
+                Mood: {aztroData.mood} <br />
+                Horoscope: {aztroData.description} <br />
+                <form>
+                    <button>New Horoscope</button>
+                </form>
+            </div>}
         </main>
     )
 }
