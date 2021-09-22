@@ -3,9 +3,10 @@ import { ACTIONS } from './ManifestationsAndAffirmations'
 
 export default function Manifestations({ manifestation, dispatch }) {
     return (
-        <div>
+
+        <li id="manifestation-item">
             <span style={{ color: manifestation.complete ? 'gray' : 'black' }}>
-                {manifestation.name}
+                {manifestation.name}  
             </span>
             <button onClick={() => dispatch(
                 {
@@ -21,6 +22,6 @@ export default function Manifestations({ manifestation, dispatch }) {
                 }
             )
             }>Delete</button>
-        </div >
+        </li>
     )
 }

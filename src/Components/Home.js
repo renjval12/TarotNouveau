@@ -1,20 +1,22 @@
 import React from "react";
 import AskSection from "./AskSectionHome";
-import SelectCardSection from "./ServiceSelectSection";
+import SelectCardSection from "./SelectCardSection";
+import imgs from "../images";
 
 export default function Home() {
+    console.log(imgs)
     return (
         <div>
             <div id="home-intro" className="section white-text">
-                <h1>Tarot Nouveau</h1>
-                <h2>Take the Mysticism out of the Mystics!</h2>
+                {/* <h1>Tarot Nouveau</h1> */}
+                <h1>Take the Mysticism out of the Mystics!</h1>
             </div>
             <section id="services-section" >
                 <h2 className="home-section-heading">Services</h2>
                 <section className="service-select-cards">
-                    <SelectCardSection sectionName="Ask the Cards" />
-                    <SelectCardSection sectionName="Ask the Stars" />
-                    <SelectCardSection sectionName="Ask the Crystal Ball" />
+                    <SelectCardSection id="ask-cards-card" imgSrc={imgs.tarotTable.default} sectionName="Ask the Cards" />
+                    <SelectCardSection id="ask-stars-card" imgSrc={imgs.starsCard.default} sectionName="Ask the Stars" />
+                    <SelectCardSection id="ask-crystal-card" imgSrc={imgs.crystalBallCard.default} sectionName="Ask the Crystal Ball" />
                 </section>
             </section>
             <section id="ask-section">
@@ -45,8 +47,8 @@ export default function Home() {
                     askQuoteId="ask-crystal-ball-quote"
                     quote="“In the street, at a café, on the bus, a person’s face can tell a story, like a crystal ball that reveals the past. Happy or long-lost loves, births, hopes and victories, successes interwoven with twists of fate.”
                     "
-                    quoteSrc="— Anne Berest (How To Be Parisian)"
-                />
+                    quoteSrc="— Anne Berest (How To Be Parisian)">
+                </AskSection>
             </section>
         </div>
     )

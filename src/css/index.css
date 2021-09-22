@@ -70,9 +70,7 @@
   position: absolute;
 }
 
-.search-btn {
-  
-}
+.search-btn {}
 
 nav {
   padding: 5% 0;
@@ -116,6 +114,7 @@ footer {
 
 .link-list ul {
   list-style-type: none;
+  padding: 0;
 }
 
 .link-list ul li {
@@ -227,6 +226,18 @@ main {
 
 #home-intro {
   background: url("../images/homeintrobg.jpeg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#home-intro h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  width: 50%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 1.5px 1.5px rgb(206, 151, 238);
 }
 
 #ask-cards-intro {
@@ -240,17 +251,22 @@ main {
 
 .home-section-heading {
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
+  color: white;
+  font-weight: 800;
   padding-top: 5%
 }
 
 #services-section {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  gap: 2% 0;
+  grid-template-rows: repeat(2, min-content);
+  /* gap: 2% 0; */
   text-align: center;
   background: linear-gradient(#1E193D, #99A9E7);
-  height: 100vh;
+  /* height: 100%; */
+}
+
+.ask-link img {
+  width: 50%;
 }
 
 @media (max-width: 700px) {
@@ -263,10 +279,13 @@ main {
 .service-select-cards {
   display: flex;
   justify-content: space-evenly;
+  padding: 5% 0;
 }
 
 .services-subheading {
   padding: 5% 0;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 #ask-section {
@@ -281,9 +300,17 @@ main {
   padding: 5%;
 }
 
+.ask-heading {
+  font-weight: 700;
+}
+
+.ask-desc {
+  font-weight: 300;
+}
+
 #ask-cards {
   background: linear-gradient(#99A9E7, #F997F1);
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 #ask-cards-desc {
@@ -298,7 +325,6 @@ main {
 
 #ask-stars {
   background: linear-gradient(#F997F1, #7CECFB);
-  height: 100vh;
 }
 
 #ask-stars-desc {
@@ -312,8 +338,26 @@ main {
 }
 
 #ask-crystal-ball {
+  padding-top: 10%;
+  height: 100%;
   background: linear-gradient(#7CECFB, #4D163E, #1D0A27);
-  height: 100vh;
+  /* background-image: url(../images/purplecrystal.png) no-repeat; */
+  /* background-size: contain;
+  background-position: center;  */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#ask-crystal-ball::before {
+  background-image: url(../images/purplecrystal.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  content: '';
+  /* display: block; */
+  position: absolute;
+  /* width: 100%; */
+  height: 500px;
 }
 
 #ask-crystal-ball-desc {
@@ -330,6 +374,31 @@ main {
 
 .section {
   height: 100vh;
+}
+
+/* About Page */
+
+#about-page {
+  display: grid;
+  grid-template: repeat(4, 1fr)/repeat(4, 1fr)
+}
+
+#about-intro {
+  grid-area: 1/1/2/5;
+  background: url('../images/aboutintrobg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#about-intro h2 {
+  color: rgb(123, 245, 254);
+  text-shadow: 2px 2px #2fa2b1;
+  font-weight: 900;
+  text-align: end;
+  align-self: end;
 }
 
 /* Ask Cards Page */
@@ -386,4 +455,37 @@ main {
   /* #contact {
     padding: 10% 0;
   } */
+}
+
+/* Manifestations and Affirmations */
+
+#mani-and-affirm {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  justify-content: space-around;
+  padding: 10%;
+  align-items: center;
+  background: linear-gradient(rgb(57, 166, 186), pink);
+}
+
+#manifestations-section {
+  padding: 5%;
+  background: pink;
+}
+
+#affirmations-section {
+  background: rgb(122, 204, 218);
+  padding: 5%;
+}
+
+#manifestation-item {
+  list-style-type: '💘';
+  padding: 5% 0;
+}
+
+@media (max-width: 600px) {
+  #mani-and-affirm {
+    flex-direction: column;
+  }
 }

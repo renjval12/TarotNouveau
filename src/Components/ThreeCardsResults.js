@@ -1,5 +1,5 @@
 import React, { useEffect, useState, createContext } from "react";
-import Card3 from "./Card5";
+import Card3 from "./Card3";
 
 //created a context variable to pass down the value of the tarotData state to the children of the ThreeCards() functional component
 export const TarotDataContext = createContext()

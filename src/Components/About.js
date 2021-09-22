@@ -1,16 +1,15 @@
 import React from "react";
 import MysticDescription from "./AboutMystic";
+import imgs from "../images"
 
 export default function About() {
     return (
-        <main>
-            
-            <section>
+        <div id="about-page">
+            <div id="about-intro">
                 <h2>About Tarot Nouveau</h2>
-                <img src="../images/tarotcardback.png" alt=""/>
-                <p></p>
-            </section>
-            <section>
+            </div>
+            <p id="about-intro-desc"></p>
+            <section id="mystic-descriptions">
                 <MysticDescription
                     id="tarot-description"
                     mysticType="Tarot"
@@ -23,6 +22,6 @@ export default function About() {
                     mysticType="Fortune Telling"
                     mysticDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. " />
             </section>
-        </main>
+        </div>
     )
 }

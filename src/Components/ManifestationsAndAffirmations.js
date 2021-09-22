@@ -55,10 +55,9 @@ export default function ManifestAffirm() {
             }
             )
     }, [])
-    
+
     return (
-        <>
-        
+        <div id="mani-and-affirm">
             <section id="manifestations-section">
                 <h1>Manifestations</h1>
                 <p>Enter what you want for your life and maybe </p>
@@ -67,13 +66,15 @@ export default function ManifestAffirm() {
                     <input id="manifest-input" type="text" value={name} onChange={e => setName(e.target.value)} placeholder="I want to be healthy..." required />
                 </form>
                 {manifestations.map(manifestation => {
-                    return <Manifestations key={manifestation.id} manifestation={manifestation} dispatch={dispatch} />
+                    return <ul>
+                        <Manifestations key={manifestation.id} manifestation={manifestation} dispatch={dispatch} />
+                    </ul>
                 })}
             </section>
-            <section>
+            <section id="affirmations-section">
                 <h1>Affirmations</h1>
                 <p>{affirmation}.</p>
             </section>
-        </>
+        </div>
     )
 }

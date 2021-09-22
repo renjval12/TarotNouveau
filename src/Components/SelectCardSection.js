@@ -3,9 +3,9 @@ import React from "react";
 
 export default function SelectCardSection(props) {
     return (
-        <div className="ask-cards-link white-text">
+        <div id={props.id} className="ask-link white-text">
             <h3 className="services-subheading">{props.sectionName}</h3>
-            <img src="#" alt={props.sectionName} />
+            <img src={props.imgSrc} alt={props.sectionName} />
         </div>
     )
 }
