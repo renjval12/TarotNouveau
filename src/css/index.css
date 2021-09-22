@@ -8,6 +8,7 @@
 }
 
 /* Header */
+
 #navbar {
   display: flex;
   align-items: center;
@@ -64,8 +65,13 @@
 }
 
 .search-bar {
-  display: inline;
+  display: inline-flex;
+  align-items: center;
   position: absolute;
+}
+
+.search-btn {
+  
 }
 
 nav {
@@ -110,7 +116,6 @@ footer {
 
 .link-list ul {
   list-style-type: none;
-  
 }
 
 .link-list ul li {
@@ -143,7 +148,7 @@ footer {
 
 #social-footer-links {
   display: flex;
-  gap: 2%; 
+  gap: 2%;
 }
 
 #license {
@@ -196,11 +201,11 @@ main {
 
 /* Button */
 
-button {
+/* button {
   border-width: 1px;
   padding: 10px 15px;
   border-radius: 50px;
-}
+} */
 
 .blk-white-btn {
   border-width: 0px;
@@ -356,3 +361,29 @@ button {
 }
 
 /* Contact Page */
+
+/* #contact {
+  background: url('../images/contactbg.jpeg');
+} */
+
+#contact-form {
+  border: 5px solid black;
+  margin: 8% 30%;
+  padding: 5%;
+  border-radius: 50px;
+  text-align: center;
+  background: linear-gradient(#EABDD0, #916FB7);
+}
+
+#form-el {
+  margin: 5% 0;
+}
+
+@media (max-width: 700px) {
+  #contact-form {
+    margin: 2% 20%;
+  }
+  /* #contact {
+    padding: 10% 0;
+  } */
+}

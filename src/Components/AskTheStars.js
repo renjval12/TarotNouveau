@@ -1,4 +1,7 @@
-import React, { useState, useReducer } from "react";
+import React, { useState } from "react";
+
+
+
 export default function Stars() {
     //stores the name and birthday of the user
     const [userInfo, setUserInfo] = useState({ name: '', birthday: '', })
@@ -23,7 +26,6 @@ export default function Stars() {
         let day = Number(userInfo.birthday.split('-')[2])
         setBirthdayDay(day)
     }
-    //variable that will hold the user's zodiac sign
     let sign = '';
 
     const handleSubmit = (event) => {
@@ -185,6 +187,21 @@ export default function Stars() {
                 </div>
                 <button>Get Results</button>
             </form>
+            <div>
+                <h1>{userInfo.name}</h1>
+                <h2>{zodiac}</h2>
+                Current Date: {aztroData.current_date} <br />
+                Compatibility: {aztroData.compatibility} <br />
+                Lucky Number: {aztroData.lucky_number} <br />
+                Lucky Time: {aztroData.lucky_time} <br />
+                Color: {aztroData.color} <br />
+                Date Range: {aztroData.date_range} <br />
+                Mood: {aztroData.mood} <br />
+                Horoscope: {aztroData.description} <br />
+                <form>
+                    <button>New Horoscope</button>
+                </form>
+            </div>
         </main>
     )
 }

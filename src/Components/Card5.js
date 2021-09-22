@@ -1,7 +1,7 @@
 import React from "react";
-import { useContext, useReducer } from "react";
+import { useContext } from "react";
 import { TarotDataContext } from "./FiveCardsResults";
-import { imgs } from "../images"
+// import { imgs } from "../images"
 
 
 export default function Card5() {

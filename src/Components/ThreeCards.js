@@ -1,17 +1,13 @@
 import { Link } from 'react-router-dom'
-import React, { useState, useRef, createContext } from "react";
 
 
-export default function ThreeCard() {
-    const [question, setQuestion] = useState('')
-    let questionRef = useRef()
-    const handleChange = () => {
-        setQuestion(questionRef.current.value)
+export default function ThreeCard({ setQuestion }) {
+    const handleChange = (event) => {
+        setQuestion(event.target.value)
     }
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        // console.log(tarotData)
     }
     return (
         <main>
@@ -20,14 +16,14 @@ export default function ThreeCard() {
                 <label className="ask-cards-label" htmlFor="question-input">Question: </label>
                 <input
                     onChange={handleChange}
-                    ref={questionRef}
                     type="text"
                     name="question-input"
                     id="question"
                     placeholder="Enter Question"
-                    required />
+                    required
+                />
 
-                <button><Link to="/three-card-results">Get Reading</Link></button>
+                <Link to="/three-card-results"><button>Get Reading</button></Link>
             </form>
         </main>
     )

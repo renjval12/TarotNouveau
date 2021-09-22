@@ -4,7 +4,7 @@ import SelectCardSection from "./ServiceSelectSection";
 
 export default function Home() {
     return (
-        <main>
+        <div>
             <div id="home-intro" className="section white-text">
                 <h1>Tarot Nouveau</h1>
                 <h2>Take the Mysticism out of the Mystics!</h2>
@@ -48,6 +48,6 @@ export default function Home() {
                     quoteSrc="— Anne Berest (How To Be Parisian)"
                 />
             </section>
-        </main>
+        </div>
     )
 }
