@@ -1,12 +1,7 @@
 import { Link } from 'react-router-dom'
 import React, { useRef, useContext } from "react";
-import { QuestionContext } from './Header';
-
-// export const QuestionContext = createContext()
 
 export default function FiveCard({setQuestion}) {
-    // const [question, setQuestion] = useState('')
-    // const {setQuestion} = useContext(QuestionContext)
     let questionRef = useRef()
     const handleChange = () => {
         setQuestion(questionRef.current.value)

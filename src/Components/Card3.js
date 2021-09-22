@@ -5,7 +5,6 @@ import { TarotDataContext } from "./ThreeCardsResults";
 export default function Card3() {
     const { tarotData, direction, question } = useContext(TarotDataContext)
     // console.log(tarotData)
-
     return (
         <>
             {tarotData.map((card, index) =>

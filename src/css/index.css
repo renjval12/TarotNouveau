@@ -8,7 +8,6 @@
 }
 
 /* Header */
-
 #navbar {
   display: flex;
   align-items: center;
@@ -111,7 +110,7 @@ footer {
 
 .link-list ul {
   list-style-type: none;
-  padding: 0;
+  
 }
 
 .link-list ul li {

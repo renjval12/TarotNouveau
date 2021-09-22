@@ -1,11 +1,12 @@
 import React from "react";
-import { useContext } from "react";
+import { useContext, useReducer } from "react";
 import { TarotDataContext } from "./FiveCardsResults";
+import { imgs } from "../images"
+
 
 export default function Card5() {
+
     const { tarotData, direction } = useContext(TarotDataContext)
-    // console.log(tarotData)
-console.log(direction)
     return (
         <>
             {tarotData.map((card, index) =>

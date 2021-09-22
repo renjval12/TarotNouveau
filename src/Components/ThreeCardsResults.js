@@ -24,14 +24,6 @@ export default function ThreeCardsResults() {
             }
             )
     }, [])
-
-    const handleChange = () => {
-        setQuestion(questionRef.current.value)
-    }
-
-    const handleSubmit = (event) => {
-        event.preventDefault()
-    }
     return (
         <section className="three-card-reading">
             <h1>Three Card reading</h1>
@@ -44,11 +36,3 @@ export default function ThreeCardsResults() {
         </section>
     )
 }
-
-// {/* {tarotData.map((card) => 
-//                 <div>
-//                     <h1>{card.name}</h1>
-//                     <h2>{direction === 0 ? card.meaning_up : card.meaning_rev}</h2>
-//                     <p>{card.desc}</p>
-//                 </div>
-//             )}  */}
