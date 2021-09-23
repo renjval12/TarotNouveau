@@ -1,6 +1,6 @@
 import React from "react";
 import MysticDescription from "./AboutMystic";
-import imgs from "../images"
+// import imgs from "../images"
 
 export default function About() {
     return (
