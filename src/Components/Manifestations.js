@@ -1,6 +1,6 @@
 import React from 'react'
 import { ACTIONS } from './ManifestationsAndAffirmations'
-
+//use props to pass the down the values of manifestation and dispatch, so I can use it in the Manifestations functional component.
 export default function Manifestations({ manifestation, dispatch }) {
     return (
 

@@ -28,6 +28,6 @@ The following is an exhaustive list of all of the REST APIs used to create this 
 
 ## Author
 🤖 Renee Valentine
-[LinkedIn](https://www.linkedin.com/in/reneejvalentine)
-[Github](https://github.com/renjval12/)
+-   [LinkedIn](https://www.linkedin.com/in/reneejvalentine)
+-    [Github](https://github.com/renjval12/)
 
