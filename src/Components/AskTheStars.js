@@ -164,18 +164,19 @@ export default function Stars() {
 
 
     return (
-        <main>
+        <section id="ask-the-stars-page">
+            <div id="ask-stars-intro" className="section">
             <h1>Ask the Stars</h1>
-            <div id="ask-stars-intro" className="intro">
+
                 <h2>“Watch the stars, and see yourself running with them.”</h2>
             </div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} class="section">
                 <div className="ask-stars-input">
                     <label className="ask-stars-label" htmlFor="birthday">Birthday: </label>
                     <input
                         onChange={handleChange}
                         type="date"
-                        min="2003-01-01"
+                        min="1955-01-01"
                         name="birthday-input"
                         id="birthday"
                         required />
@@ -192,7 +193,7 @@ export default function Stars() {
                 </div>
                 <button onClick={() => setIsResultsShowing(!isResultsShowing)}>Get Results</button>
             </form>
-            {isResultsShowing && <div>
+            {isResultsShowing && <div id="stars-results">
                 <h1>{userInfo.name}</h1>
                 <h2>{zodiac}</h2>
                 Current Date: {aztroData.current_date} <br />
@@ -209,6 +210,6 @@ export default function Stars() {
 
             </div>
             }
-        </main>
+        </section>
     )
 }
