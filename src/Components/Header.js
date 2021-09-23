@@ -48,7 +48,7 @@ export default function Header() {
                             <li><Link className="white-text" to='/about'>About</Link></li>
                             <li><Link className="white-text" to='/ask-the-cards'> Ask the Cards</Link></li>
                             <li><Link className="white-text" to='/ask-the-stars'>Ask the Stars</Link></li>
-                            <li><Link className="white-text" to='/ask-the-crystal-ball'>Ask the Crystal Ball</Link></li>
+                            {/* <li><Link className="white-text" to='/ask-the-crystal-ball'>Ask the Crystal Ball</Link></li> */}
                             <li><Link className="white-text" to='/manifestations-and-affirmations'>Manifestations + Affirmations</Link></li>
                             <li><Link className="white-text" to='/contact'>Contact</Link></li>
                         </ul>

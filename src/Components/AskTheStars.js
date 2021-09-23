@@ -15,6 +15,11 @@ export default function Stars() {
 
     //stores the zodiac sign of the user 
     const [zodiac, setZodiac] = useState('')
+
+
+    //toggles the render of the Horoscope results
+    const [isResultsShowing, setIsResultsShowing] = useState(false);
+
     //function that handles the change of the input fields in the form
     const handleChange = (event) => {
         // changes values in the state to birthday the user inputs
@@ -185,9 +190,9 @@ export default function Stars() {
                         placeholder="Enter Name"
                         required />
                 </div>
-                <button>Get Results</button>
+                <button onClick={() => setIsResultsShowing(!isResultsShowing)}>Get Results</button>
             </form>
-            <div>
+            {isResultsShowing && <div>
                 <h1>{userInfo.name}</h1>
                 <h2>{zodiac}</h2>
                 Current Date: {aztroData.current_date} <br />
@@ -201,7 +206,9 @@ export default function Stars() {
                 <form>
                     <button>New Horoscope</button>
                 </form>
+
             </div>
+            }
         </main>
     )
 }
