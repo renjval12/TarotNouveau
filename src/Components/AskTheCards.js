@@ -7,7 +7,7 @@ export default function Cards() {
         <main>
             <section id="ask-the-cards-intro" class="section">
                 <h2>Find out what the cards have to say about it!</h2>
-                <button>Start Here</button>
+                <button href="#reading-choices">Start Here</button>
             </section>
             <section id="reading-choices" >
                 <div class="reading-choice">

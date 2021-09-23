@@ -60,9 +60,9 @@ export default function ManifestAffirm() {
         <div id="mani-and-affirm">
             <section id="manifestations-section">
                 <h1>Manifestations</h1>
-                <p>Enter what you want for your life and maybe </p>
+                <p>Enter what you want for your life and maybe you just might get it...</p>
                 <form onSubmit={handleSubmit}>
-                    <label htmlFor="manifestation">Manifestation Description: </label>
+                    <label htmlFor="manifestation"></label>
                     <input id="manifest-input" type="text" value={name} onChange={e => setName(e.target.value)} placeholder="I want to be healthy..." required />
                 </form>
                 {manifestations.map(manifestation => {

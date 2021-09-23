@@ -6,8 +6,9 @@ export default function Manifestations({ manifestation, dispatch }) {
 
         <li id="manifestation-item">
             <span style={{ color: manifestation.complete ? 'gray' : 'black' }}>
-                {manifestation.name}  
+                {manifestation.name}
             </span>
+            <br/>
             <button onClick={() => dispatch(
                 {
                     type: ACTIONS.TOGGLE_MANIFESTATION,
