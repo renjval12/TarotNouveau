@@ -6,6 +6,8 @@ export const tarotTable = require('./tarotTable.png')
 export const starsCard = require('./askthestarscard.png')
 export const crystalBallCard = require('./crystalball@2x.png')
 export const purpleCrystal = require('./crystalhomebg.png')
+export const starHome1 = require('./starhome1.png')
+export const starHome2 = require('./starhome2.png')
 export const fool = require('./thefool.jpg')
 export const magician = require('./themagician.jpg')
 export const highPriestess = require('./thehighpriestess.jpg')
@@ -87,7 +89,7 @@ export const kingofswords = require('./kingofswords.jpg')
 
 
 const imgs = {
-    homeIntroBg, askCardsIntroBg, tarotCardBack,tarotCard, tarotTable, crystalBallCard, starsCard, purpleCrystal, fool, magician, highPriestess, empress, emperor, hierophant, lovers, chariot, strength, hermit, wheelOfFortune, justice, hangedMan, death, temperance, devil, tower, star, moon, sun, judgement, world, aceofwands, twoofwands, threeofwands, fourofwands, fiveofwands, sixofwands, sevenofwands, eightofwands, nineofwands, tenofwands, knightofwands, queenofwands, kingofwands, aceofcoins, twoofcoins, threeofcoins, fourofcoins, fiveofcoins, sixofcoins, sevenofcoins, eightofcoins, nineofcoins, tenofcoins, pageofcoins, knightofcoins, queenofcoins, kingofcoins, aceofcups, twoofcups, threeofcups, fourofcups, fiveofcups, sixofcups, sevenofcups, eightofcups, nineofcups, tenofcups, pageofcups, knightofcups, queenofcups, kingofcups, aceofswords, twoofswords, threeofswords, fourofswords, fiveofswords, sixofswords, sevenofswords, eightofswords, nineofswords, tenofswords, pageofswords, knightofswords, queenofswords, kingofswords
+    homeIntroBg, askCardsIntroBg, tarotCardBack, tarotCard, tarotTable, crystalBallCard, starsCard, purpleCrystal, starHome1, starHome2, fool, magician, highPriestess, empress, emperor, hierophant, lovers, chariot, strength, hermit, wheelOfFortune, justice, hangedMan, death, temperance, devil, tower, star, moon, sun, judgement, world, aceofwands, twoofwands, threeofwands, fourofwands, fiveofwands, sixofwands, sevenofwands, eightofwands, nineofwands, tenofwands, knightofwands, queenofwands, kingofwands, aceofcoins, twoofcoins, threeofcoins, fourofcoins, fiveofcoins, sixofcoins, sevenofcoins, eightofcoins, nineofcoins, tenofcoins, pageofcoins, knightofcoins, queenofcoins, kingofcoins, aceofcups, twoofcups, threeofcups, fourofcups, fiveofcups, sixofcups, sevenofcups, eightofcups, nineofcups, tenofcups, pageofcups, knightofcups, queenofcups, kingofcups, aceofswords, twoofswords, threeofswords, fourofswords, fiveofswords, sixofswords, sevenofswords, eightofswords, nineofswords, tenofswords, pageofswords, knightofswords, queenofswords, kingofswords
 }
 
 export default imgs
