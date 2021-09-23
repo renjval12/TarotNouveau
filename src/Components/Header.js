@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 import Home from "./Home";
 import About from "./About"
 import Cards from "./AskTheCards";
-import CrystalBall from "./AskTheCrystalBall";
+// import CrystalBall from "./AskTheCrystalBall";
 import Stars from "./AskTheStars";
 import StarsResults from "./StarsResults";
 import Contact from "./Contact";
@@ -58,7 +58,7 @@ export default function Header() {
                         <Route path='/about' component={About} />
                         <Route path='/ask-the-cards' component={Cards} />
                         <Route path='/ask-the-stars' component={Stars} />
-                        <Route path='/ask-the-crystal-ball' component={CrystalBall} />
+                        {/* <Route path='/ask-the-crystal-ball' component={CrystalBall} /> */}
                         <Route path='/contact' component={Contact} />
                         <Route path='/three-card-reading'>
                             <ThreeCard setQuestion={setQuestion} />
