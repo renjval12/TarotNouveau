@@ -166,7 +166,7 @@ export default function Stars() {
     return (
         <section id="ask-the-stars-page">
             <div id="ask-stars-intro" className="section">
-            <h1>Ask the Stars</h1>
+                <h1>Ask the Stars</h1>
 
                 <h2>“Watch the stars, and see yourself running with them.”</h2>
             </div>
@@ -193,20 +193,25 @@ export default function Stars() {
                 </div>
                 <button onClick={() => setIsResultsShowing(!isResultsShowing)}>Get Results</button>
             </form>
-            {isResultsShowing && <div id="stars-results">
-                <h1>{userInfo.name}</h1>
-                <h2>{zodiac}</h2>
-                Current Date: {aztroData.current_date} <br />
-                Compatibility: {aztroData.compatibility} <br />
-                Lucky Number: {aztroData.lucky_number} <br />
-                Lucky Time: {aztroData.lucky_time} <br />
-                Color: {aztroData.color} <br />
-                Date Range: {aztroData.date_range} <br />
-                Mood: {aztroData.mood} <br />
-                Horoscope: {aztroData.description} <br />
-                <form>
-                    <button>New Horoscope</button>
-                </form>
+            {isResultsShowing && <div id="stars-results" class="section">
+
+                <p>
+                    <h1>{userInfo.name}</h1>
+                    <h2>{zodiac}</h2>
+                    Current Date: {aztroData.current_date} <br />
+                    Compatibility: {aztroData.compatibility} <br />
+                    Lucky Number: {aztroData.lucky_number} <br />
+                    Lucky Time: {aztroData.lucky_time} <br />
+                    Color: {aztroData.color} <br />
+                    Date Range: {aztroData.date_range} <br />
+                    Mood: {aztroData.mood} <br />
+                    Horoscope: {aztroData.description}
+                    <br />
+                    <form>
+                        <button>New Horoscope</button>
+                    </form>
+                </p>
+
 
             </div>
             }

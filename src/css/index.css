@@ -563,6 +563,13 @@ form #question {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  
+  background: linear-gradient(  rgb(233, 136, 189),#bcb8d5, rgb(242, 226, 235));
+}
+
+#stars-results p {
+  padding: 30%;
 }
 
 /* Ask Crystal Ball Page */
