@@ -579,7 +579,7 @@ form #question {
 
 #ask-stars-intro {
   background: url("../images/starsintrobg.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
