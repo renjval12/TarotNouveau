@@ -16,16 +16,22 @@ export default function About() {
                     id="tarot-description"
                     mysticType="Tarot"
                     mysticDesc="The tarot is a pack of playing cards, used from at least the mid-15th century in various parts of Europe to play games such as Italian tarocchini, French tarot and Austrian Königrufen, many of which are still played today. "
-                    url="https://www.biddytarot.com/" />
+                    url="https://www.biddytarot.com/" 
+                    linkTo="/ask-the-cards"
+                    />
                 <MysticDescription id="astrology-description"
                     mysticType="Astrology"
                     mysticDesc="Astrology is a pseudoscience that claims to divine information about human affairs and terrestrial events by studying the movements and relative positions of celestial objects. "
-                    url="https://www.astrology-zodiac-signs.com/" />
+                    url="https://www.astrology-zodiac-signs.com/" 
+                    linkTo="/ask-the-stars"
+                    />
                 <MysticDescription
                     id="fortune-description"
                     mysticType="Fortune Telling"
                     mysticDesc="A crystal ball, also known as an orbuculum or crystal sphere, is a crystal or glass ball and common fortune-telling object. It is generally associated with the performance of clairvoyance and scrying in particular."
                     url="https://en.wikipedia.org/wiki/Fortune-telling"
+                    linkTo="/ask-the-crystal-ball"
+
                 />
             </section>
         </div>

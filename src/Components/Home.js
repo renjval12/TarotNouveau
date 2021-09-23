@@ -27,7 +27,7 @@ export default function Home() {
                     askQuoteId="ask-cards-quote"
                     quote="“Because at the end of the day, it’s not about the tarot cards, or the crystals, or the special teas. That’s not where the magic lives. The magic is in the tiny moments. The small touches, the gentle smiles, the quiet laughs. "
                     quoteSrc="— Brittainy C. Cherry (The Air He Breathes)"
-                    linkTo="/ask-the-cards" descAos="fade-right" quoteAos="fade-left" src={imgs.starHome1.default} src2={imgs.starHome2.default} />
+                    linkTo="/ask-the-cards" descAos="fade-right" quoteAos="fade-left" />
 
                 <AskSection
                     id="ask-stars"
@@ -40,7 +40,7 @@ export default function Home() {
                     linkTo="/ask-the-stars" 
                     descAos="fade-left" quoteAos="fade-right"
                     quoteSrc="― Carl Sagan, Cosmos "
-
+                    src={imgs.starHome1.default} src2={imgs.starHome2.default} 
                 />
                 <AskSection
                     id="ask-crystal-ball"
