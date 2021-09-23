@@ -1,24 +1,33 @@
-# Tarot Nouveau 🔮
+﻿# Tarot Nouveau 🔮
 
-"Take the mysticism out of the mystics!" is the tagline for Tarot Nouveau.
-Tarot Nouveau, is a React application whose main function is to provide any user that visits, with easily digestable, 3 and/or 5 card tarot readings.
-The user need only to choose their cards, input/ask their question, to find out what the cards have to say about it.
-
-Additionally, if the user is looking to the stars for some insight on who they are, as well, they can go to the 'Ask the Stars' page for horoscope info.
-If they want to consult the crystal ball, they can also go to the "Ask the Crystal Ball" section.
-
-The demographic I am intending to target with this application, are millennials and Gen-Z.
-
-This app, integrates data from the following APIs:
-
-<ul>
-<li><a href="https://app.swaggerhub.com/apis/ekswagger/rws-tarot_card_api/1.0.0">Ekswagger RWS Tarot Card Rest API</a></li>
-<li><a href="https://aztro.sameerkumar.website/">Aztro API</a></li>
-<li><a href="https://8ball.delegator.com/">8Ball API</a></li>
-</ul>
-
-Link to Prototype: https://xd.adobe.com/view/3f5be611-652d-4e83-af2b-93aa0e4f4027-6a08/?fullscreen
+**"Take the mysticism out of the mystics!"** 
+ 
+Tarot Nouveau, is a React application, that is a multi-service web application that allows the user to indulge in the mystic practices.
 
 Webpage: https://tarot-nouveau.vercel.app/
 
-This project is a WORK IN PROGRESS. Review working prototype for information on intended output.
+## Usage
+
+ ### Ask the Cards
+ The user goes to the "**Ask the Cards 🃏**" tab of the webpage, they enter their question, hit enter and get a three or five card reading response. Each card will be  either upright or reversed. 
+ ### Ask the Stars
+ The user goes to the "**Ask the Stars ✨**" tab of the webpage, they enter their birthday and name, hit enter and get horoscope for the day based on their sun sign. They also receive information on other sun signs they're compatible with, their lucky number, lucky time, and more. 
+  ### Ask the Crystal Ball
+ The user goes to the "**Ask the Crystal Ball 🔮**" tab of the webpage, much like the ask the cards section of the website, the user enters their question, and the digital crystal ball provides some insight on their fate....
+
+### Manifestations and Affirmations 
+In the "**Manifestations and Affirmations 🪄**" section of the application, the user is able to add the things they'd like to **manifest** in their lives and within in the same page, an affirmation is rendered to motivate them to accomplish their goals in life, or just to serve as a prompt for their manifestations list. 
+
+
+## REST APIs 
+The following is an exhaustive list of all of the REST APIs used to create this application:
+-   [Ekswagger RWS Tarot Card Rest API](https://app.swaggerhub.com/apis/ekswagger/rws-tarot_card_api/1.0.0)
+-   [Aztro API](https://aztro.sameerkumar.website/)
+-   [8Ball API](https://8ball.delegator.com/)
+-   [Affirmations API](https://github.com/misselliev/affirmations-api)
+
+## Author
+🤖 Renee Valentine
+[LinkedIn](https://www.linkedin.com/in/reneejvalentine)
+[Github](https://github.com/renjval12/)
+
