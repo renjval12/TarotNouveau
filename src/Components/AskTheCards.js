@@ -9,8 +9,8 @@ export default function Cards() {
                 <h2>Find out what the cards have to say about it!</h2>
                 <button>Start Here</button>
             </section>
-            <section id="reading-choices" class="section" >
-                <div>
+            <section id="reading-choices" >
+                <div class="reading-choice">
                     <h2>Three Card Reading</h2>
                     <div class="card-reading-spread">
                         <img src={imgs.tarotCard.default} alt="tarot card clip art" />
@@ -19,7 +19,7 @@ export default function Cards() {
                     </div>
                     <Link to="/three-card-reading"><button>Start</button></Link>
                 </div>
-                <div>
+                <div class="reading-choice">
                     <h2>Five Card Reading</h2>
                     <div id="five-card-spread" class="card-reading-spread">
                         <img id="card1" src={imgs.tarotCard.default} alt="tarot card clip art" />

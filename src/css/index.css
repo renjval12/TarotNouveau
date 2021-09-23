@@ -274,6 +274,9 @@ main {
     display: flex;
     flex-direction: column;
   }
+  .ask-link img {
+    width: 30%;
+  }
 }
 
 .service-select-cards {
@@ -345,7 +348,7 @@ main {
   /* background-size: contain;
   background-position: center;  */
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template: 1fr/repeat(3, 1fr);
 }
 
 #ask-crystal-ball::before {
@@ -408,8 +411,8 @@ main {
 }
 
 #ask-the-cards-intro {
-  background: url('../images/askintrobg.jpg');
-  background-size: 100%;
+  background: no-repeat url('../images/askintrobg.jpg');
+  background-size: cover;
   display: flex;
   gap: 2%;
   flex-direction: column;
@@ -434,12 +437,13 @@ main {
   background: transparent linear-gradient(180deg, #BAA4D3 0%, var(--unnamed-color-ffffff) 100%) 0% 0% no-repeat padding-box;
   background: transparent linear-gradient(180deg, #BAA4D3 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
   opacity: 1;
-  padding: 0 3%;
+  padding: 10% 3%;
 }
 
 .card-reading-spread {
   display: flex;
   width: 50%;
+  padding: 5% 0;
 }
 
 .card-reading-spread img {
@@ -469,6 +473,31 @@ main {
 
 #card5 {
   grid-area: 3/2/4/3;
+}
+
+@media (max-width: 700px) {
+  #reading-choices {
+    flex-direction: column;
+  }
+}
+
+/*Three Card Page */
+
+#three-card-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: transparent linear-gradient(180deg, var(--unnamed-color-ffffff) 0%, #E7E2ED 50%, #EABDD0 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, #FFFFFF 0%, #E7E2ED 50%, #EABDD0 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+form #question {
+  display: block;
+  margin: 5% 0;
 }
 
 /* Ask Stars Page */
@@ -512,9 +541,6 @@ main {
   #contact-form {
     margin: 2% 20%;
   }
-  /* #contact {
-    padding: 10% 0;
-  } */
 }
 
 /* Manifestations and Affirmations */

@@ -10,7 +10,7 @@ export default function ThreeCard({ setQuestion }) {
         event.preventDefault()
     }
     return (
-        <main>
+        <section id="three-card-page" class="section">
             <h2>Three Card Reading</h2>
             <form onSubmit={handleSubmit}>
                 <label className="ask-cards-label" htmlFor="question-input">Question: </label>
@@ -22,10 +22,9 @@ export default function ThreeCard({ setQuestion }) {
                     placeholder="Enter Question"
                     required
                 />
-
-                <Link to="/three-card-results"><button>Get Reading</button></Link>
+                <button><Link to="/three-card-results">Get Reading</Link></button>
             </form>
-        </main>
+        </section>
     )
 
 }
