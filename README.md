@@ -2,7 +2,7 @@
 
 **"Take the mysticism out of the mystics!"** 
  
-Tarot Nouveau, is a React application, that is a multi-service web application that allows the user to indulge in the mystic practices.
+Tarot Nouveau, is a React application, with a light use of React-Bootstrap, that is a multi-service web application that allows the user to indulge in the mystic practices.
 
 Webpage: https://tarot-nouveau.vercel.app/
 
@@ -25,6 +25,12 @@ The following is an exhaustive list of all of the REST APIs used to create this 
 -   [Aztro API](https://aztro.sameerkumar.website/)
 -   [8Ball API](https://8ball.delegator.com/)
 -   [Affirmations API](https://github.com/misselliev/affirmations-api)
+
+## Libraries & Frameworks
+-   [ReactJS](https://reactjs.org/)
+-   [React-Bootstrap](https://react-bootstrap.github.io/)
+-   [React Router](https://reactrouter.com/)
+-   [AOS](https://github.com/michalsnik/aos/tree/v2)
 
 ## Author
 🤖 Renee Valentine
