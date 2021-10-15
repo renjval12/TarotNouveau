@@ -706,12 +706,19 @@ form #question {
   background: pink;
   overflow: scroll;
 }
+#manifestations-section h1 {
+  font-weight: 700;
+  color: rgb(255, 45, 80);
+}
 
 #affirmations-section {
   background: rgb(122, 204, 218);
   padding: 5%;
 }
-
+#affirmations-section h1 {
+  font-weight: 700;
+  color: rgb(0, 129, 152);
+}
 #manifestations-section, #affirmations-section {
   max-width: 500px;
 }

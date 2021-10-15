@@ -46,12 +46,12 @@ export default function ManifestAffirm() {
     useEffect(() => {
         console.log('useEffect runs')
         //fetch call to Affirmations API
-        fetch('https://dulce-affirmations-api.herokuapp.com/affirmation')
+        fetch('https://affirmationsapi.herokuapp.com/api/random-affirmation')
             .then(response => response.json())
             .then(result => {
                 //set the affirmation state, to the result of the function call from the Tarot-api.
                 // console.log(result[0].phrase)
-                setAffirmation(result[0].phrase)
+                setAffirmation(result.affirmation)
             }
             )
     }, [])
@@ -73,7 +73,7 @@ export default function ManifestAffirm() {
             </section>
             <section id="affirmations-section">
                 <h1>Affirmations</h1>
-                <p>{affirmation}.</p>
+                <p>{affirmation}</p>
             </section>
         </div>
     )
