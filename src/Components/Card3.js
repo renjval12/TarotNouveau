@@ -7,9 +7,9 @@ export default function Card3() {
     return (
         <>
             {tarotData.map((card, index) =>
-                <div key={card.name_short}>
+                <div key={card.name_short} className="result-card"  id={"result-card" + index}>
                     <h3>{card.name}</h3>
-                    <h4>{direction[index] === 0 ? `Upright:  ${card.meaning_up}` : `Reversed: ${card.meaning_rev}`}</h4>
+                    <p>{direction[index] === 0 ? `Upright:  ${card.meaning_up}` : `Reversed: ${card.meaning_rev}`}</p>
                     <p>{card.desc}</p>
                 </div>
             )}
