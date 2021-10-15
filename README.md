@@ -23,8 +23,8 @@ In the "**Manifestations and Affirmations 🪄**" section of the application, th
 The following is an exhaustive list of all of the REST APIs used to create this application:
 -   [Ekswagger RWS Tarot Card Rest API](https://app.swaggerhub.com/apis/ekswagger/rws-tarot_card_api/1.0.0)
 -   [Aztro API](https://aztro.sameerkumar.website/)
--   [8Ball API](https://8ball.delegator.com/)
--   [Affirmations API](https://github.com/misselliev/affirmations-api)
+-   [Crystal Ball API](https://github.com/renjval12/CrystalBallAPI)
+-   [Affirmations API](https://github.com/renjval12/AffirmationsAPI)
 
 ## Libraries & Frameworks
 -   [ReactJS](https://reactjs.org/)
