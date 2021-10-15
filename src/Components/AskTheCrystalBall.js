@@ -14,10 +14,10 @@ export default function CrystalBall() {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        fetch(`https://8ball.delegator.com/magic/JSON/${question}`)
+        fetch(`https://crystalballapi.herokuapp.com/answer`)
             .then(response => response.json())
             .then(result => {
-                setUserAnswer(result)
+                setUserAnswer(result.answer)
                 console.log(userAnswer)
             });
     }
@@ -25,7 +25,7 @@ export default function CrystalBall() {
 
     return (
         <main>
-            <section id="ask-crystal-ball-intro" className="white-text">
+            <section id="ask-crystal-ball-intro" className="section white-text">
                 <h1>Consult with the Crystal Ball to know what to do next</h1>
                 <button>Start</button>
             </section>
@@ -36,7 +36,8 @@ export default function CrystalBall() {
                     <button onClick={() => setIsResultShowing(!isResultShowing)}>Ask</button>
                 </form>
                 {isResultShowing && <div>
-                    <p> Current Date: { }</p>
+                    <h2>{question}</h2>
+                    <p>{userAnswer}</p>
                 </div>}
             </section>
         </main >

@@ -9,7 +9,7 @@ export default function FiveCard({ setQuestion }) {
         event.preventDefault()
     }
     return (
-        <div class="card-page section">
+        <div className="card-page section">
             <h2>Five Card Reading</h2>
             <form onSubmit={handleSubmit}>
                 <label className="ask-cards-label" htmlFor="question-input">Question: </label>

@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 import Home from "./Home";
 import About from "./About"
 import Cards from "./AskTheCards";
-// import CrystalBall from "./AskTheCrystalBall";
+import CrystalBall from "./AskTheCrystalBall";
 import Stars from "./AskTheStars";
 import StarsResults from "./StarsResults";
 import Contact from "./Contact";
@@ -48,7 +48,7 @@ export default function Header() {
                             <li><Link className="white-text" to='/about'>About</Link></li>
                             <li><Link className="white-text" to='/ask-the-cards'> Ask the Cards</Link></li>
                             <li><Link className="white-text" to='/ask-the-stars'>Ask the Stars</Link></li>
-                            {/* <li><Link className="white-text" to='/ask-the-crystal-ball'>Ask the Crystal Ball</Link></li> */}
+                            <li><Link className="white-text" to='/ask-the-crystal-ball'>Ask the Crystal Ball</Link></li>
                             <li><Link className="white-text" to='/manifestations-and-affirmations'>Manifestations + Affirmations</Link></li>
                             <li><Link className="white-text" to='/contact'>Contact</Link></li>
                         </ul>
@@ -58,7 +58,7 @@ export default function Header() {
                         <Route path='/about' component={About} />
                         <Route path='/ask-the-cards' component={Cards} />
                         <Route path='/ask-the-stars' component={Stars} />
-                        {/* <Route path='/ask-the-crystal-ball' component={CrystalBall} /> */}
+                        <Route path='/ask-the-crystal-ball' component={CrystalBall} />
                         <Route path='/contact' component={Contact} />
                         <Route path='/three-card-reading'>
                             <ThreeCard setQuestion={setQuestion} />
