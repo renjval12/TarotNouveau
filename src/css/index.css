@@ -712,6 +712,8 @@ form #question {
 }
 
 #affirmations-section {
+  width: 500px;
+  height: 275px;
   background: rgb(122, 204, 218);
   padding: 5%;
 }
@@ -721,6 +723,10 @@ form #question {
 }
 #manifestations-section, #affirmations-section {
   max-width: 500px;
+}
+
+#manifestations-section p, #affirmations-section p{
+  font-size: 1.2rem;
 }
 
 #manifestation-item {
